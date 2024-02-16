@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ecomm</title>
+<html lang="en">
+
+<head>
+    <title>E-com</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,11 +10,18 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
+</head>
 
-  <body>
+<body>
     <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+        <p class="notice">
+            <%= notice %>
+        </p>
+        <p class="alert">
+            <%= alert %>
+        </p>
+        <%= yield %>
     </main>
-  </body>
+</body>
+
 </html>
