@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ecom
+  database: ecomm
   pool: 5
   host: localhost
   username: root

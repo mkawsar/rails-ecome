@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Admin.destroy_all
+#
+Admin.create!(email: "admin@example.com", password: 123456)
+
+50.times do |i|
+    Admin.create!(email: Faker::Internet.safe_email, password: 123456)
+end
