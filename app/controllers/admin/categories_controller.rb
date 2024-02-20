@@ -1,9 +1,10 @@
-class Admin::CategoriesController < ApplicationController
+class Admin::CategoriesController < AdminController
+    include Pagination
     before_action :set_admin_category, only: %i[ show edit update destroy ]
 
     # GET /admin/categories or /admin/categories.json
     def index
-        @admin_categories = Category.all
+        @admin_categories = Category.paginate(:page => params[:page], :per_page => 5)
     end
 
     # GET /admin/categories/1 or /admin/categories/1.json

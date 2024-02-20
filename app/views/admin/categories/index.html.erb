@@ -16,6 +16,11 @@
             <div class="py-2 inline-block min-w-full">
                 <div class="overlow-x-auto">
                     <%= render @admin_categories %>
+
+                    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+                    <nav aria-label="Page navigation example">
+                        <%= will_paginate @admin_categories, :style => 'color:blue' %>
+                    </nav>
                 </div>
             </div>
         </div>
