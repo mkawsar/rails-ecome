@@ -5,7 +5,6 @@ class CreateAdminProducts < ActiveRecord::Migration[7.1]
             t.text :description
             t.integer :price
             t.references :category, null: false, foreign_key: true
-            t.integer :stock
             t.boolean :active
 
             t.timestamps
