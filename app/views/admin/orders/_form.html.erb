@@ -2,7 +2,6 @@
     <% if admin_order.errors.any? %>
         <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
             <h2><%= pluralize(admin_order.errors.count, "error") %> prohibited this admin_order from being saved:</h2>
-
             <ul>
                 <% admin_order.errors.each do |error| %>
                     <li><%= error.full_message %></li>
