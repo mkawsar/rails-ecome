@@ -36,7 +36,7 @@
                                     <%= item.address %>
                                 </td>
                                 <td class="px-6 py-4 whitepsace-nowrap text-sm font-medium text-gray-800">
-                                    <%= item.total %>
+                                    $<%= (item.total/100).to_s %>
                                 </td>
                             </tr>
                         <% end %>
