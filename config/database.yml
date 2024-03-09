@@ -1,11 +1,11 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: ecomm
-  pool: 5
-  host: localhost
-  username: root
-  password: root
+    adapter: postgresql
+    encoding: unicode
+    database: ecomm
+    pool: 5
+    host: localhost
+    username: root
+    password: root
 
 #test:
 #  adapter: postgresql
@@ -16,7 +16,7 @@ development:
 #  password: postgres_password
 
 staging:
-  url: <%= ENV['DATABASE_URL'] %>
+    url: <%= ENV['DATABASE_URL'] %>
 
 production:
-  url: <%= ENV['DATABASE_URL'] %> 
+    url: <%= ENV['DATABASE_URL'] %>
